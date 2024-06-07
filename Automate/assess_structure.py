@@ -25,15 +25,3 @@ def infer_geometry(building: Base):
         print('No geometry found.')
 
     return geometry
-
-client = SpeckleClient(host="SPECKLE_SERVER")
-account = get_local_account("SPECKLE_TOKEN")
-client.authenticate_with_account(account)
-
-stream_id = "STREAM_ID"
-object_id = "OBJECT_ID"
-
-transport = ServerTransport(client=client, stream_id=stream_id)
-building = Base.get(id=object_id, transport=transport)
-
-infer_geometry(building)
