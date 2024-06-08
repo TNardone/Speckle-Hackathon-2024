@@ -24,6 +24,7 @@ try:
 except Exception as e:
     print(f"Authentication failed: {e}")
 
+"""
 try:
     # Fetch stream details
     stream = client.stream.get(id=STREAM_ID)
@@ -39,3 +40,4 @@ try:
         print("You do not have write access to this stream.")
 except Exception as e:
     print(f"Failed to retrieve stream details: {e}")
+    """
