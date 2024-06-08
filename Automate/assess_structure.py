@@ -8,9 +8,6 @@ Return either sound or not sound
 """
 
 from specklepy.objects import Base
-from specklepy.api.client import SpeckleClient
-from specklepy.api.credentials import get_local_account
-from specklepy.api.transport import ServerTransport
 
 def infer_geometry(building: Base):
     """
