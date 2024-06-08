@@ -21,7 +21,6 @@ public class PillarHealth : MonoBehaviour
 
     void DestroyPillar()
     {
-        // Add destruction effects here (e.g., particles, sound)
         Destroy(gameObject);
     }
 }
